@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Reliability Lab</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="shell">
+<aside>
+<div class="side-in">
+  <h1>Reliability Lab<br>คู่มือและข้อมูล</h1>
+  <p>ข้อมูลสำหรับผู้ติดต่องานห้องแลป</p>
+  <nav role="tablist" aria-label="เมนูหลัก">
+    <button role="tab" id="t-line" aria-selected="true" aria-controls="line">การใช้งาน Line Official</button>
+    <button role="tab" id="t-eq" aria-selected="false" aria-controls="eq">Lab Equipment</button>
+    <button role="tab" id="t-efar" aria-selected="false" aria-controls="efar">คู่มือการใช้งาน e-Far program</button>
+  </nav>
+</div>
+</aside>
+
+<main>
+<section id="line" role="tabpanel" aria-labelledby="t-line">
+  <h2>การใช้งาน Line Official</h2>
+  <p class="lead">ติดต่อห้องแลปผ่าน Line Official เพื่อสอบถามข้อมูล รับประกาศ และแจ้งปัญหาการใช้งาน</p>
+  <div class="panel line-grid">
+    <div class="qr"><img src="assets/line-qr.png" alt="QR Code เพิ่มเพื่อน Line Official ของห้องแลป" width="196" height="196"></div>
+    <div>
+      <h3 style="margin-top:0">วิธีเพิ่มเพื่อน</h3>
+      <ol class="steps">
+        <li>เปิดแอป Line แล้วแตะ “เพิ่มเพื่อน”</li>
+        <li>สแกน QR Code หรือค้นหาด้วย Line ID ของห้องแลป</li>
+        <li>กด “เพิ่ม” แล้วรอข้อความต้อนรับ</li>
+        <li>เลือกเมนูจากแถบด้านล่างของแชตเพื่อดูข้อมูลที่ต้องการ</li>
+      </ol>
+    </div>
+  </div>
+  <h3>ใช้ทำอะไรได้บ้าง</h3>
+  <div class="feat">
+    <div><b>ประกาศและข่าวสาร</b><span>ตารางปิด-เปิดห้อง แจ้งซ่อมบำรุง</span></div>
+    <div><b>สอบถามข้อมูล</b><span>สอบถามตารางทดสอบและเครื่องมือ</span></div>
+    <div><b>แจ้งปัญหา</b><span>แจ้งปัญหาการใช้งานโปรแกรม e-Far</span></div>
+  </div>
+  <p class="note">เวลาทำการตอบแชท: จันทร์–เสาร์ 07:30–17:30 น.</p>
+</section>
+
+<section id="eq" role="tabpanel" aria-labelledby="t-eq" hidden>
+  <h2>Lab Equipment</h2>
+  <p class="lead" id="eqlead">เลือกสถานที่เพื่อดูรายการเครื่องมือ</p>
+  <div class="pick" id="pick">
+    <button class="loc" data-p="LPN1"><b>LPN1</b><span>ดูเครื่องมือในอาคาร/ห้อง LPN1</span></button>
+    <button class="loc" data-p="LPN2"><b>LPN2</b><span>ดูเครื่องมือในอาคาร/ห้อง LPN2</span></button>
+  </div>
+  <div id="eqview" hidden>
+  <button class="back" id="back">← เปลี่ยนสถานที่</button>
+  <h3 id="eqtitle" style="margin-top:0"></h3>
+  <div class="tools" id="searchbar">
+    <input type="search" id="q" placeholder="ค้นหาเครื่องมือ เช่น เครื่องชั่ง, pH" aria-label="ค้นหาเครื่องมือ">
+  </div>
+  <div class="tools" id="chips" role="group" aria-label="กรองตามประเภท"></div>
+  <div class="eq" id="grid"></div>
+  <p class="empty" id="none" hidden>ไม่พบเครื่องมือที่ตรงกับคำค้นหา ลองใช้คำอื่นหรือเลือก “ทั้งหมด”</p>
+  </div>
+</section>
+
+<section id="efar" role="tabpanel" aria-labelledby="t-efar" hidden>
+  <h2>คู่มือการใช้งาน e-Far program</h2>
+  <p class="lead">แตะที่หน้าเอกสารเพื่อขยาย แตะอีกครั้งเพื่อย่อ</p>
+<div class="it">
+  <span class="it-label">IT DEPARTMENT</span>
+  <b class="it-title">ติดตั้งโปรแกรมและแจ้งปัญหาการใช้งาน</b>
+  <span class="it-name">ติดต่อ <b>K.Pongnarin</b></span>
+  <div class="it-ext"><span>LPN1 <b>366</b></span><span>LPN2 <b>579</b></span></div>
+</div>
+<div class="pdfbar"><label for="jump">ไปที่หน้า</label><select id="jump"><option value="1">หน้า 1</option><option value="2">หน้า 2</option><option value="3">หน้า 3</option><option value="4">หน้า 4</option><option value="5">หน้า 5</option><option value="6">หน้า 6</option><option value="7">หน้า 7</option><option value="8">หน้า 8</option><option value="9">หน้า 9</option><option value="10">หน้า 10</option><option value="11">หน้า 11</option><option value="12">หน้า 12</option><option value="13">หน้า 13</option><option value="14">หน้า 14</option><option value="15">หน้า 15</option><option value="16">หน้า 16</option><option value="17">หน้า 17</option><option value="18">หน้า 18</option><option value="19">หน้า 19</option><option value="20">หน้า 20</option><option value="21">หน้า 21</option><option value="22">หน้า 22</option><option value="23">หน้า 23</option><option value="24">หน้า 24</option><option value="25">หน้า 25</option><option value="26">หน้า 26</option><option value="27">หน้า 27</option><option value="28">หน้า 28</option></select></div>
+<figure class="pg" id="pg1"><img loading="lazy" src="assets/guide/page-01.jpg" alt="คู่มือ e-Far หน้า 1 จาก 28"><figcaption>หน้า 1 / 28</figcaption></figure>
+<figure class="pg" id="pg2"><img loading="lazy" src="assets/guide/page-02.jpg" alt="คู่มือ e-Far หน้า 2 จาก 28"><figcaption>หน้า 2 / 28</figcaption></figure>
+<figure class="pg" id="pg3"><img loading="lazy" src="assets/guide/page-03.jpg" alt="คู่มือ e-Far หน้า 3 จาก 28"><figcaption>หน้า 3 / 28</figcaption></figure>
+<figure class="pg" id="pg4"><img loading="lazy" src="assets/guide/page-04.jpg" alt="คู่มือ e-Far หน้า 4 จาก 28"><figcaption>หน้า 4 / 28</figcaption></figure>
+<figure class="pg" id="pg5"><img loading="lazy" src="assets/guide/page-05.jpg" alt="คู่มือ e-Far หน้า 5 จาก 28"><figcaption>หน้า 5 / 28</figcaption></figure>
+<figure class="pg" id="pg6"><img loading="lazy" src="assets/guide/page-06.jpg" alt="คู่มือ e-Far หน้า 6 จาก 28"><figcaption>หน้า 6 / 28</figcaption></figure>
+<figure class="pg" id="pg7"><img loading="lazy" src="assets/guide/page-07.jpg" alt="คู่มือ e-Far หน้า 7 จาก 28"><figcaption>หน้า 7 / 28</figcaption></figure>
+<figure class="pg" id="pg8"><img loading="lazy" src="assets/guide/page-08.jpg" alt="คู่มือ e-Far หน้า 8 จาก 28"><figcaption>หน้า 8 / 28</figcaption></figure>
+<figure class="pg" id="pg9"><img loading="lazy" src="assets/guide/page-09.jpg" alt="คู่มือ e-Far หน้า 9 จาก 28"><figcaption>หน้า 9 / 28</figcaption></figure>
+<figure class="pg" id="pg10"><img loading="lazy" src="assets/guide/page-10.jpg" alt="คู่มือ e-Far หน้า 10 จาก 28"><figcaption>หน้า 10 / 28</figcaption></figure>
+<figure class="pg" id="pg11"><img loading="lazy" src="assets/guide/page-11.jpg" alt="คู่มือ e-Far หน้า 11 จาก 28"><figcaption>หน้า 11 / 28</figcaption></figure>
+<figure class="pg" id="pg12"><img loading="lazy" src="assets/guide/page-12.jpg" alt="คู่มือ e-Far หน้า 12 จาก 28"><figcaption>หน้า 12 / 28</figcaption></figure>
+<figure class="pg" id="pg13"><img loading="lazy" src="assets/guide/page-13.jpg" alt="คู่มือ e-Far หน้า 13 จาก 28"><figcaption>หน้า 13 / 28</figcaption></figure>
+<figure class="pg" id="pg14"><img loading="lazy" src="assets/guide/page-14.jpg" alt="คู่มือ e-Far หน้า 14 จาก 28"><figcaption>หน้า 14 / 28</figcaption></figure>
+<figure class="pg" id="pg15"><img loading="lazy" src="assets/guide/page-15.jpg" alt="คู่มือ e-Far หน้า 15 จาก 28"><figcaption>หน้า 15 / 28</figcaption></figure>
+<figure class="pg" id="pg16"><img loading="lazy" src="assets/guide/page-16.jpg" alt="คู่มือ e-Far หน้า 16 จาก 28"><figcaption>หน้า 16 / 28</figcaption></figure>
+<figure class="pg" id="pg17"><img loading="lazy" src="assets/guide/page-17.jpg" alt="คู่มือ e-Far หน้า 17 จาก 28"><figcaption>หน้า 17 / 28</figcaption></figure>
+<figure class="pg" id="pg18"><img loading="lazy" src="assets/guide/page-18.jpg" alt="คู่มือ e-Far หน้า 18 จาก 28"><figcaption>หน้า 18 / 28</figcaption></figure>
+<figure class="pg" id="pg19"><img loading="lazy" src="assets/guide/page-19.jpg" alt="คู่มือ e-Far หน้า 19 จาก 28"><figcaption>หน้า 19 / 28</figcaption></figure>
+<figure class="pg" id="pg20"><img loading="lazy" src="assets/guide/page-20.jpg" alt="คู่มือ e-Far หน้า 20 จาก 28"><figcaption>หน้า 20 / 28</figcaption></figure>
+<figure class="pg" id="pg21"><img loading="lazy" src="assets/guide/page-21.jpg" alt="คู่มือ e-Far หน้า 21 จาก 28"><figcaption>หน้า 21 / 28</figcaption></figure>
+<figure class="pg" id="pg22"><img loading="lazy" src="assets/guide/page-22.jpg" alt="คู่มือ e-Far หน้า 22 จาก 28"><figcaption>หน้า 22 / 28</figcaption></figure>
+<figure class="pg" id="pg23"><img loading="lazy" src="assets/guide/page-23.jpg" alt="คู่มือ e-Far หน้า 23 จาก 28"><figcaption>หน้า 23 / 28</figcaption></figure>
+<figure class="pg" id="pg24"><img loading="lazy" src="assets/guide/page-24.jpg" alt="คู่มือ e-Far หน้า 24 จาก 28"><figcaption>หน้า 24 / 28</figcaption></figure>
+<figure class="pg" id="pg25"><img loading="lazy" src="assets/guide/page-25.jpg" alt="คู่มือ e-Far หน้า 25 จาก 28"><figcaption>หน้า 25 / 28</figcaption></figure>
+<figure class="pg" id="pg26"><img loading="lazy" src="assets/guide/page-26.jpg" alt="คู่มือ e-Far หน้า 26 จาก 28"><figcaption>หน้า 26 / 28</figcaption></figure>
+<figure class="pg" id="pg27"><img loading="lazy" src="assets/guide/page-27.jpg" alt="คู่มือ e-Far หน้า 27 จาก 28"><figcaption>หน้า 27 / 28</figcaption></figure>
+<figure class="pg" id="pg28"><img loading="lazy" src="assets/guide/page-28.jpg" alt="คู่มือ e-Far หน้า 28 จาก 28"><figcaption>หน้า 28 / 28</figcaption></figure>
+<p class="note">อ้างอิง: เอกสาร 003-008-000077 Appendix.1 Rev.B (ข้อมูลรหัสผ่านในเอกสารถูกปิดไว้)</p>
+</section>
+</main>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
