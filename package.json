@@ -1,0 +1,11 @@
+{
+  "name": "reliability-lab",
+  "version": "1.0.0",
+  "description": "Reliability Lab web and backend system",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node --watch backend/server.js",
+    "install:backend": "cd backend && npm install"
+  }
+}
+

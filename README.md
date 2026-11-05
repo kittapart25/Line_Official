@@ -1,54 +1,63 @@
-# Reliability Lab – เว็บแนะนำห้องแลป
+# Reliability Lab – ระบบแนะนำห้องแลป
 
-เว็บสำหรับแสดงข้อมูลห้อง Reliability Lab (ไม่มีระบบล็อกอินหรือฟอร์ม)
+เว็บสำหรับแสดงข้อมูลห้อง Reliability Lab แยกโครงสร้าง Frontend และ Backend พร้อม Web Server ในตัว
 
-เมนูหลัก 3 หน้า
-1. การใช้งาน Line Official
-2. Lab Equipment (เลือกสถานที่ LPN1 / LPN2)
-3. คู่มือการใช้งาน e-Far program
+---
 
-## วิธีเปิดใน VS Code
-1. เปิด VS Code → **File > Open Folder…** แล้วเลือกโฟลเดอร์นี้
-2. ติดตั้งส่วนขยาย **Live Server** (VS Code จะแนะนำให้อัตโนมัติ)
-3. คลิกขวาที่ `index.html` → **Open with Live Server**
+## โครงสร้างโปรเจกต์ (Frontend & Backend)
 
-เปิดไฟล์ `index.html` ด้วยเบราว์เซอร์ตรง ๆ ก็ใช้งานได้เช่นกัน (ไม่ต้องใช้เซิร์ฟเวอร์)
-
-## โครงสร้างไฟล์
-```
-index.html        โครงหน้าเว็บและหน้าคู่มือ e-Far
-css/style.css     สไตล์ทั้งหมด (โหมดสว่าง/มืด, มือถือ)
-js/data.js        ข้อมูลเครื่องมือ LPN1 / LPN2  ← แก้ข้อมูลที่นี่
-js/app.js         การทำงานของหน้าเว็บ (เมนู, ปุ่มกรอง, แสดงการ์ด)
-assets/line-qr.png        QR Code Line Official
-assets/images/            รูปเครื่องมือ (สัดส่วน 4:3)
-assets/guide/page-01..28.jpg  หน้าคู่มือ e-Far (ปิดข้อมูลส่วนบุคคลแล้ว)
-```
-
-## การแก้ไขข้อมูลเครื่องมือ (`js/data.js`)
-แต่ละรายการเป็นออบเจ็กต์ เช่น
-
-```js
-{"p": "LPN1", "c": "อุณหภูมิ", "n": "ชื่อภาษาไทย", "e": "English name",
- "rows": [["แบรนด์ / รุ่น","Brand / Model"],["จำนวน","1"],["Location","Rel Lab, ตึก 4 ชั้น 1"]],
- "img": "assets/images/ไฟล์.jpg"}
+```text
+Line_Official/
+├── frontend/                     # ส่วนหน้าเว็บ (Client)
+│   ├── assets/                   # รูปภาพและเอกสารคู่มือ
+│   ├── css/
+│   │   └── style.css             # สไตล์ทั้งหมด
+│   ├── js/
+│   │   ├── app.js                # จัดการหน้าเว็บและการดึงข้อมูลจาก API
+│   │   └── data.js               # ข้อมูลสำรอง (Offline fallback)
+│   └── index.html                # โครงสร้างหน้าเว็บหลัก
+├── backend/                      # ส่วนเซิร์ฟเวอร์ (API & Web Server)
+│   ├── data/
+│   │   └── equipments.json       # ฐานข้อมูลเครื่องมือ (JSON)
+│   ├── package.json              # Backend dependencies (Express, CORS)
+│   └── server.js                 # Web Server & REST API
+├── package.json                  # Root runner scripts
+├── .gitignore
+└── README.md
 ```
 
-| คีย์ | ความหมาย |
-|---|---|
-| `p` | สถานที่ `LPN1` หรือ `LPN2` |
-| `c` | หมวดหมู่ (ใช้สร้างปุ่มกรองอัตโนมัติ) |
-| `rows` | หัวข้อ–ค่า ที่แสดงในการ์ด ใช้ `\n` ขึ้นบรรทัดใหม่ |
-| `cons: true` | เครื่องมือ Consigned (ขอบแดง + ป้าย) เรียงท้ายสุดเสมอ |
-| `rm` | ข้อความ Remark (กล่องแดงใต้การ์ด) |
-| `img` | path รูปเครื่องมือ ถ้าไม่ใส่จะแสดงกรอบว่าง |
+---
 
-รูปเครื่องมือแนะนำสัดส่วน **4:3** ขนาด **1000 × 750 px** ขึ้นไป ไฟล์ละไม่เกิน 300 KB
+## วิธีรันระบบ
 
-## ส่วนอื่นที่แก้บ่อย
-- ข้อมูลติดต่อ IT: ค้นหา `class="it"` ใน `index.html`
-- เวลาทำการตอบแชท Line: ค้นหา `เวลาทำการ` ใน `index.html`
-- สีธีม: ตัวแปร `--side`, `--accent`, `--ok` ที่ต้นไฟล์ `css/style.css`
+### 1. รัน Backend Web Server (แนะนำ)
+เปิด Terminal ที่โฟลเดอร์โปรเจกต์ แล้วรันคำสั่ง:
+```bash
+npm start
+```
+*(หรือ `node backend/server.js`)*
 
-> หมายเหตุ: ฟอนต์ IBM Plex Sans Thai โหลดจาก Google Fonts ต้องต่ออินเทอร์เน็ต
-> ถ้าออฟไลน์จะใช้ฟอนต์ระบบแทนโดยอัตโนมัติ
+เปิดเบราว์เซอร์ไปที่: **http://localhost:3000**
+
+> เซิร์ฟเวอร์นี้จะทำหน้าที่เสิร์ฟทั้งหน้าเว็บ Frontend และ REST API พร้อมกัน สามารถรันได้ทันทีโดยไม่ต้องติดตั้งไลบรารีเพิ่ม (มี Built-in HTTP Server) หรือหากต้องการติดตั้ง Express ให้รัน `cd backend && npm install`
+
+### 2. เปิด Frontend ผ่าน VS Code Live Server
+1. คลิกขวาที่ไฟล์ `frontend/index.html`
+2. เลือก **Open with Live Server**
+
+---
+
+## Backend REST API Endpoints
+
+| Method | Endpoint | รายละเอียด |
+|---|---|---|
+| `GET` | `/api/health` | ตรวจสอบสถานะการทำงานของเซิร์ฟเวอร์ |
+| `GET` | `/api/equipments` | ดึงรายการเครื่องมือทั้งหมด |
+| `GET` | `/api/equipments?place=LPN1` | กรองเครื่องมือตามสถานที่ (`LPN1` / `LPN2`) |
+| `GET` | `/api/equipments?category=อุณหภูมิ` | กรองตามหมวดหมู่ |
+| `GET` | `/api/equipments?search=...` | ค้นหาชื่อเครื่องมือ |
+| `GET` | `/api/categories?place=LPN1` | ดึงรายชื่อหมวดหมู่ของสถานที่ |
+| `GET` | `/api/equipments/:id` | ดึงข้อมูลเครื่องมือตาม ID |
+| `POST` | `/api/equipments` | เพิ่มข้อมูลเครื่องมือใหม่ (บันทึกลง `equipments.json`) |
+| `PUT` | `/api/equipments/:id` | แก้ไขข้อมูลเครื่องมือ |
+| `DELETE` | `/api/equipments/:id` | ลบข้อมูลเครื่องมือ |

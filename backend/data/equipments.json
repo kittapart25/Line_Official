@@ -1,0 +1,634 @@
+[
+  {
+    "id": 1,
+    "p": "LPN2",
+    "c": "อุณหภูมิและความชื้น",
+    "n": "เครื่องควบคุมอุณหภูมิและความชื้น",
+    "e": "Temperature & Humidity Test Chamber",
+    "rows": [
+      [
+        "แบรนด์ / รุ่น",
+        "Sailham / ZH-HS-150D"
+      ],
+      [
+        "จำนวน",
+        "1"
+      ],
+      [
+        "Specification",
+        "Temp: -40 to 150 ºC\nHumid: 20 to 98 %RH"
+      ],
+      [
+        "Test space",
+        "W500 x D500 x H600 mm"
+      ],
+      [
+        "Test Condition",
+        "85 ºC / 85 %RH"
+      ],
+      [
+        "จำนวนตัวอย่าง",
+        "ไม่กำหนด"
+      ],
+      [
+        "Location",
+        "ชั้น 2, Rel Lab"
+      ]
+    ],
+    "img": "assets/images/sailham-zh-hs-150d.jpg"
+  },
+  {
+    "id": 2,
+    "p": "LPN2",
+    "c": "อุณหภูมิและความชื้น",
+    "n": "เครื่องควบคุมอุณหภูมิและความชื้น",
+    "e": "Temperature & Humidity Test Chamber",
+    "rows": [
+      [
+        "แบรนด์ / รุ่น",
+        "Espec / SH-222"
+      ],
+      [
+        "จำนวน",
+        "1"
+      ],
+      [
+        "Specification",
+        "Temp: -20 to 130 ºC\nHumid: 30 to 95 %RH"
+      ],
+      [
+        "Test space",
+        "W300 × H300 × D250 mm"
+      ],
+      [
+        "Test Condition",
+        "30 ºC / 60 %RH\n60 ºC / 60 %RH"
+      ],
+      [
+        "จำนวนตัวอย่าง",
+        "ไม่กำหนด"
+      ],
+      [
+        "Location",
+        "ชั้น 2, Rel Lab"
+      ]
+    ],
+    "img": "assets/images/espec-sh-222.jpg"
+  },
+  {
+    "id": 3,
+    "p": "LPN2",
+    "c": "อุณหภูมิและความชื้น",
+    "n": "เครื่องควบคุมอุณหภูมิและความชื้น",
+    "e": "Temperature & Humidity Test Chamber",
+    "rows": [
+      [
+        "แบรนด์ / รุ่น",
+        "Espec / SH-221"
+      ],
+      [
+        "จำนวน",
+        "1"
+      ],
+      [
+        "Specification",
+        "Temp: -20 to 130 ºC\nHumid: 30 to 95 %RH"
+      ],
+      [
+        "Test space",
+        "W300 × H300 × D250 mm"
+      ],
+      [
+        "Test Condition",
+        "30 ºC / 60 %RH\n60 ºC / 60 %RH"
+      ],
+      [
+        "จำนวนตัวอย่าง",
+        "ไม่กำหนด"
+      ],
+      [
+        "Location",
+        "ชั้น 2, Rel Lab"
+      ]
+    ],
+    "img": "assets/images/espec-sh-221.jpg"
+  },
+  {
+    "id": 4,
+    "p": "LPN2",
+    "c": "อุณหภูมิ",
+    "n": "เครื่องอบอุณหภูมิสูง",
+    "e": "High Temperature Oven",
+    "rows": [
+      [
+        "แบรนด์ / รุ่น",
+        "Espec / PH-101"
+      ],
+      [
+        "จำนวน",
+        "2"
+      ],
+      [
+        "Specification",
+        "Temp: ambient to 220 ºC"
+      ],
+      [
+        "Test space",
+        "W450 x D450 x H450 mm"
+      ],
+      [
+        "Test Condition",
+        "85 ºC and 125 ºC"
+      ],
+      [
+        "จำนวนตัวอย่าง",
+        "ไม่กำหนด"
+      ],
+      [
+        "Location",
+        "ชั้น 2, Rel Lab"
+      ]
+    ],
+    "img": "assets/images/espec-ph-101.jpg"
+  },
+  {
+    "id": 5,
+    "p": "LPN2",
+    "c": "อุณหภูมิ",
+    "n": "เครื่องทดสอบการหมุนเวียนอุณหภูมิ",
+    "e": "Temperature Cycle Test Chamber",
+    "rows": [
+      [
+        "แบรนด์ / รุ่น",
+        "WEISS / T/270/70/25"
+      ],
+      [
+        "จำนวน",
+        "1"
+      ],
+      [
+        "Specification",
+        "Temp: -70 to 180 ºC\nTransfer rate: 25 ºC / min"
+      ],
+      [
+        "Test space",
+        "W750 x D580 x H615 mm"
+      ],
+      [
+        "Test Condition",
+        "-40 to 85 ºC 15/5/15"
+      ],
+      [
+        "จำนวนตัวอย่าง",
+        "ไม่กำหนด"
+      ],
+      [
+        "Location",
+        "ชั้น 2, Rel Lab"
+      ]
+    ],
+    "img": "assets/images/weiss-t-270-70-25.jpg"
+  },
+  {
+    "id": 6,
+    "p": "LPN2",
+    "c": "อุณหภูมิ",
+    "n": "เครื่องทดสอบการหมุนเวียนอุณหภูมิแบบฉับพลัน",
+    "e": "Thermal Shock Test Chamber",
+    "rows": [
+      [
+        "แบรนด์ / รุ่น",
+        "WEISS / ShockEvent T120/V2-32"
+      ],
+      [
+        "จำนวน",
+        "1"
+      ],
+      [
+        "Specification",
+        "Temp: -80 to 220 ºC\nTransfer time: 10 sec"
+      ],
+      [
+        "Test space",
+        "W380 x D430 x H370 mm"
+      ],
+      [
+        "Test Condition",
+        "-55 to 125 ºC 10/1/10"
+      ],
+      [
+        "จำนวนตัวอย่าง",
+        "ไม่กำหนด"
+      ],
+      [
+        "Location",
+        "ชั้น 2, Rel Lab"
+      ]
+    ],
+    "img": "assets/images/weiss-shockevent-t120-v2-32.jpg"
+  },
+  {
+    "id": 7,
+    "p": "LPN2",
+    "c": "บัดกรี",
+    "n": "อ่างหลอมตะกั่ว",
+    "e": "Solder Pot",
+    "rows": [
+      [
+        "แบรนด์ / รุ่น",
+        "Hakko / FX-301B"
+      ],
+      [
+        "จำนวน",
+        "2"
+      ],
+      [
+        "Specification",
+        "Temp: 200 to 380 ºC\nSolder Type: Pb Free"
+      ],
+      [
+        "Test space",
+        "W75 × H51 × D75 mm"
+      ],
+      [
+        "จำนวนตัวอย่าง",
+        "ไม่กำหนด"
+      ],
+      [
+        "Location",
+        "ชั้น 2, Rel Lab"
+      ]
+    ],
+    "img": "assets/images/hakko-fx-301b.jpg"
+  },
+  {
+    "id": 8,
+    "p": "LPN2",
+    "c": "ทดสอบทางกล",
+    "n": "เครื่องทดสอบแรงสั่นสะเทือน",
+    "e": "Packaging Vibration Tester",
+    "rows": [
+      [
+        "แบรนด์ / รุ่น",
+        "-"
+      ],
+      [
+        "จำนวน",
+        "1"
+      ],
+      [
+        "Running speed",
+        "100-300 RPM"
+      ],
+      [
+        "Speed Display Accuracy",
+        "1 RPM"
+      ],
+      [
+        "Amplitude",
+        "25.4mm (in)"
+      ],
+      [
+        "Table Size",
+        "W120 x L120 cm"
+      ],
+      [
+        "จำนวนตัวอย่าง",
+        "ไม่กำหนด"
+      ],
+      [
+        "Location",
+        "Rel Lab, ตึก 4 ชั้น 1"
+      ]
+    ],
+    "img": "assets/images/packaging-vibration-tester.jpg"
+  },
+  {
+    "id": 9,
+    "p": "LPN2",
+    "c": "อุณหภูมิ",
+    "n": "เครื่องอบอุณหภูมิสูง",
+    "e": "High Temperature Oven",
+    "rows": [
+      [
+        "แบรนด์ / รุ่น",
+        "Espec / PHH-102"
+      ],
+      [
+        "จำนวน",
+        "1"
+      ],
+      [
+        "Specification",
+        "Temp: ambient to 300 ºC"
+      ],
+      [
+        "Test space",
+        "W450 x D450 x H450 mm"
+      ],
+      [
+        "จำนวนตัวอย่าง",
+        "ไม่กำหนด"
+      ],
+      [
+        "Location",
+        "ชั้น 2, Rel Lab"
+      ]
+    ],
+    "cons": true,
+    "rm": "Reserved for the equipment owner only.",
+    "img": "assets/images/espec-phh-102.jpg"
+  },
+  {
+    "id": 10,
+    "p": "LPN2",
+    "c": "อุณหภูมิ",
+    "n": "เครื่องทดสอบการหมุนเวียนอุณหภูมิ",
+    "e": "Temperature Cycle Test Chamber",
+    "rows": [
+      [
+        "แบรนด์ / รุ่น",
+        "WEISS / T/270/70/25"
+      ],
+      [
+        "จำนวน",
+        "1"
+      ],
+      [
+        "Specification",
+        "Temp: -70 to 180 ºC\nTransfer rate: 25 ºC / min"
+      ],
+      [
+        "Test space",
+        "W750 x D580 x H615 mm"
+      ],
+      [
+        "จำนวนตัวอย่าง",
+        "ไม่กำหนด"
+      ],
+      [
+        "Location",
+        "ชั้น 2, Rel Lab"
+      ]
+    ],
+    "cons": true,
+    "rm": "Reserved for the equipment owner only.",
+    "img": "assets/images/weiss-t-270-70-25.jpg"
+  },
+  {
+    "id": 11,
+    "p": "LPN2",
+    "c": "อุณหภูมิ",
+    "n": "เครื่องทดสอบการหมุนเวียนอุณหภูมิแบบฉับพลัน",
+    "e": "Thermal Shock Test Chamber",
+    "rows": [
+      [
+        "แบรนด์ / รุ่น",
+        "ESPEC / TSA-43EL"
+      ],
+      [
+        "จำนวน",
+        "1"
+      ],
+      [
+        "Specification",
+        "Temp: -60 to 200 ºC\nTransfer time: 15 min"
+      ],
+      [
+        "Test space",
+        "W240 x D370 x H460 mm"
+      ],
+      [
+        "จำนวนตัวอย่าง",
+        "ไม่กำหนด"
+      ],
+      [
+        "Location",
+        "ชั้น 2, Rel Lab"
+      ]
+    ],
+    "cons": true,
+    "rm": "Reserved for the equipment owner only.",
+    "img": "assets/images/espec-tsa-43el.jpg"
+  },
+  {
+    "id": 12,
+    "p": "LPN1",
+    "n": "เครื่องควบคุมอุณหภูมิและความชื้น",
+    "e": "Temperature & Humidity Test Chamber",
+    "c": "อุณหภูมิและความชื้น",
+    "b": "ESPEC / SH241",
+    "q": "1",
+    "sp": "Temp: -20 to 130 ºC\nHumid: 30 to 95 %RH",
+    "img": "assets/images/espec-sh241.jpg",
+    "ts": "W300 × H300 × D250 mm",
+    "sm": "ไม่กำหนด",
+    "l": "Rel Lab, ตึก 4 ชั้น 1"
+  },
+  {
+    "id": 13,
+    "p": "LPN1",
+    "c": "อุณหภูมิและความชื้น",
+    "n": "เครื่องควบคุมอุณหภูมิและความชื้น",
+    "e": "Temperature & Humidity Test Chamber",
+    "b": "Sailham / ZH-HS-150D",
+    "q": "1",
+    "sp": "Temp: -40 to 150 ºC\nHumid: 20 to 98 %RH",
+    "ts": "W500 x D500 x H600 mm",
+    "sm": "ไม่กำหนด",
+    "l": "Rel Lab, ตึก 4 ชั้น 1",
+    "img": "assets/images/sailham-zh-hs-150d.jpg"
+  },
+  {
+    "id": 14,
+    "p": "LPN1",
+    "c": "อุณหภูมิ",
+    "n": "เครื่องอบอุณหภูมิสูง",
+    "e": "High Temperature Oven",
+    "b": "Sailham / ZH-HT-50B",
+    "q": "1",
+    "sp": "Temp: ambient to 260 ºC",
+    "ts": "W500 x D500 x H500 mm",
+    "sm": "ไม่กำหนด",
+    "l": "Rel Lab, ตึก 4 ชั้น 1",
+    "img": "assets/images/sailham-zh-ht-50b.jpg"
+  },
+  {
+    "id": 15,
+    "p": "LPN1",
+    "c": "อุณหภูมิ",
+    "n": "เครื่องทดสอบการหมุนเวียนอุณหภูมิ",
+    "e": "Temperature Cycle Test Chamber",
+    "b": "WEISS / T/270/70/25",
+    "q": "1",
+    "sp": "Temp: -70 to 180 ºC\nTransfer rate: 25 ºC / min",
+    "ts": "W750 x D580 x H615 mm",
+    "sm": "ไม่กำหนด",
+    "l": "Rel Lab, ตึก 4 ชั้น 1",
+    "img": "assets/images/weiss-t-270-70-25.jpg"
+  },
+  {
+    "id": 16,
+    "p": "LPN1",
+    "c": "อุณหภูมิ",
+    "n": "เครื่องทดสอบการหมุนเวียนอุณหภูมิแบบฉับพลัน",
+    "e": "Thermal Shock Test Chamber",
+    "b": "Votsch / VT7012 S2",
+    "q": "1",
+    "sp": "Temp: -80 to 220 ºC\nTransfer time: <1 min",
+    "ts": "W470 x D650 x H410 mm",
+    "sm": "ไม่กำหนด",
+    "l": "Rel Lab, ตึก 4 ชั้น 1",
+    "img": "assets/images/votsch-vt7012-s2.jpg"
+  },
+  {
+    "id": 17,
+    "p": "LPN1",
+    "c": "อุณหภูมิและความชื้น",
+    "n": "ตู้ทดสอบความชื้นและความดัน",
+    "e": "Pressure Cook Chamber",
+    "b": "Tri-o Tech / ET-244P",
+    "q": "1",
+    "sp": "Temp: Ambient - 151 ºC\nHumid: 100 %RH\nPressure: 0-56 psi",
+    "ts": "diameter 18 cm",
+    "sm": "ไม่กำหนด",
+    "l": "Rel Lab, ตึก 4 ชั้น 1",
+    "img": "assets/images/tri-o-tech-et-244p.jpg"
+  },
+  {
+    "id": 18,
+    "p": "LPN1",
+    "c": "ตรวจวัดการปนเปื้อน",
+    "n": "เครื่องทดสอบการปนเปื้อนทางไอออน",
+    "e": "Ionic Contamination Tester",
+    "b": "Gen 3. Systems / CM33+",
+    "q": "1",
+    "sp": "Measurement range: 0.01- 30ug/cm2 NaCl equivalence\nSensitivity: <0.25% of measurement range",
+    "ts": "D500 x L350 x W60 mm",
+    "sm": "minimum surface area 100 cm2",
+    "l": "Rel Lab, ตึก 4 ชั้น 1",
+    "img": "assets/images/gen-3-systems-cm33.jpg"
+  },
+  {
+    "id": 19,
+    "p": "LPN1",
+    "c": "บัดกรี",
+    "n": "อ่างหลอมตะกั่ว",
+    "e": "Solder Pot",
+    "b": "Hakko / FX-305",
+    "q": "1",
+    "sp": "Temp: 50 to 450 ºC\nSolder Type: Pb Free",
+    "ts": "W100 × H53 × D100 mm",
+    "sm": "ไม่กำหนด",
+    "l": "FA Lab",
+    "img": "assets/images/hakko-fx-305.jpg"
+  },
+  {
+    "id": 20,
+    "p": "LPN1",
+    "cons": true,
+    "c": "อุณหภูมิ",
+    "n": "เครื่องทดสอบการหมุนเวียนอุณหภูมิ",
+    "e": "Temperature Cycle Test Chamber",
+    "rows": [
+      [
+        "แบรนด์ / รุ่น",
+        "CSZ / ZP(HP)S-16-10-10-SC/WC"
+      ],
+      [
+        "จำนวน",
+        "1"
+      ],
+      [
+        "Specification",
+        "Temp: -70 to 190 ºC\nTransfer rate: 20 ºC / min"
+      ],
+      [
+        "Test space",
+        "W760 x D760 x H760 mm"
+      ],
+      [
+        "จำนวนตัวอย่าง",
+        "ไม่กำหนด"
+      ],
+      [
+        "Location",
+        "Rel Lab, ตึก 4 ชั้น 1"
+      ]
+    ],
+    "rm": "Reserved for the equipment owner only.",
+    "img": "assets/images/csz-zp-hp-s-16-10-10-sc-wc.jpg"
+  },
+  {
+    "id": 21,
+    "p": "LPN1",
+    "cons": true,
+    "c": "ทดสอบทางกล",
+    "n": "เครื่องทดสอบแรงกระแทกเชิงกล",
+    "e": "Mechanical Shock Tester",
+    "rows": [
+      [
+        "แบรนด์ / รุ่น",
+        "ATS / PSS-S50F"
+      ],
+      [
+        "จำนวน",
+        "1"
+      ],
+      [
+        "Test condition",
+        "Test A:\n500g, 0.5 ms 3 shock per Face - 6 Faces total\nTest B:\n1000g, 0.5 ms 3 shock per Face - 6 Faces total"
+      ],
+      [
+        "Table Size",
+        "W300 x L300 mm"
+      ],
+      [
+        "จำนวนตัวอย่าง",
+        "ไม่กำหนด"
+      ],
+      [
+        "Location",
+        "Rel Lab, ตึก 4 ชั้น 1"
+      ]
+    ],
+    "rm": "Reserved for the equipment owner only.",
+    "img": "assets/images/ats-pss-s50f.jpg"
+  },
+  {
+    "id": 22,
+    "p": "LPN1",
+    "cons": true,
+    "c": "ทดสอบทางกล",
+    "n": "เครื่องทดสอบแรงสั่นสะเทือน",
+    "e": "Vibration Tester",
+    "rows": [
+      [
+        "แบรนด์ / รุ่น",
+        "ETS / MPA101/L215M"
+      ],
+      [
+        "จำนวน",
+        "1"
+      ],
+      [
+        "Test Condition",
+        "0.04 g^2/Hz 50-100 Hz Decreasing linearly to\n0.02 g^2/Hz at 137 Hz 0.02 g^2/Hz, 137-2000 Hz\n3 planes 15 min each axis"
+      ],
+      [
+        "Table Size",
+        "W180 x L180 mm"
+      ],
+      [
+        "จำนวนตัวอย่าง",
+        "ไม่กำหนด"
+      ],
+      [
+        "Location",
+        "Rel Lab, ตึก 4 ชั้น 1"
+      ]
+    ],
+    "rm": "Reserved for the equipment owner only.",
+    "img": "assets/images/ets-mpa101-l215m.jpg"
+  }
+]
